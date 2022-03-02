@@ -5,12 +5,12 @@ import { ThirdwebSDK } from "@3rdweb/sdk";
 // import thirdweb
 import { useWeb3 } from "@3rdweb/hooks";
 
-// We instantiate the sdk on Rinkeby.
-const sdk = new ThirdwebSDK("rinkeby");
-
 import { ethers } from "ethers";
 
 import { UnsupportedChainIdError } from "@web3-react/core";
+
+// We instantiate the sdk on Rinkeby.
+const sdk = new ThirdwebSDK("rinkeby");
 
 // We can grab a reference to our ERC-1155 contract.
 const bundleDropModule = sdk.getBundleDropModule(
